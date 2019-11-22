@@ -1,0 +1,26 @@
+
+{% load static %}
+
+<!-- the places where rovers are standing -->
+<!-- Will be added jquery and css things so in that way we can animate -->
+<!-- CSS properties are in custom.css file in static -->
+
+<div class="middle" style="
+height: 100vh;
+/*background-color: #efefef;*/
+display: flex;
+justify-content: center;
+">
+    <!--<div class="all-rovers" style="padding: 100px 25px 0px 25px; width: 80%; display: flex">-->
+
+            {% for rovers in rovers %}
+                <div style="width: 30%; margin: 0px 30px;">
+                    <div style="text-align: center">
+                        <h2>{{ rovers.year }}</h2>
+                        <img src="{{ rovers.image.url }}" alt="" style="height: 300px; align-self: center">
+                    </div>
+                </div>
+            {% endfor %}
+    </div>
+
+</div>

@@ -1,0 +1,704 @@
+ERROR - django.request |                        2019-11-15 18:00:50,826  
+Internal Server Error: /sss/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/ataparlarr/Desktop/website-master/itu_rover/about/views.py", line 15, in get_context_data
+    context['proposal'] = MembersPage.objects.get().proposal
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-11-15 18:00:51,324  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-11-15 18:01:27,428  
+Internal Server Error: /sss/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/ataparlarr/Desktop/website-master/itu_rover/about/views.py", line 15, in get_context_data
+    context['proposal'] = MembersPage.objects.get().proposal
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-11-15 18:01:32,626  
+Internal Server Error: /sss/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/ataparlarr/Desktop/website-master/itu_rover/about/views.py", line 15, in get_context_data
+    context['proposal'] = MembersPage.objects.get().proposal
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+WARNING - django.request |                        2019-11-15 18:01:32,968  
+Not Found: /favicon.ico
+---
+ERROR - django.request |                        2019-11-15 18:02:13,414  
+Internal Server Error: /hakkında/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/ataparlarr/Desktop/website-master/itu_rover/about/views.py", line 15, in get_context_data
+    context['proposal'] = MembersPage.objects.get().proposal
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-11-15 18:03:14,241  
+Internal Server Error: /hakkında/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/ataparlarr/Desktop/website-master/itu_rover/about/views.py", line 15, in get_context_data
+    context['proposal'] = MembersPage.objects.get().proposal
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-11-15 18:03:17,643  
+Internal Server Error: /sss/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/ataparlarr/Desktop/website-master/itu_rover/about/views.py", line 15, in get_context_data
+    context['proposal'] = MembersPage.objects.get().proposal
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-11-15 18:03:38,855  
+Internal Server Error: /hakkında/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/ataparlarr/Desktop/website-master/itu_rover/about/views.py", line 15, in get_context_data
+    context['proposal'] = MembersPage.objects.get().proposal
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+members.models.DoesNotExist: MembersPage matching query does not exist.
+ERROR - django.request |                        2019-11-15 18:04:06,144  
+Internal Server Error: /hakkında/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/ataparlarr/Desktop/website-master/itu_rover/about/views.py", line 15, in get_context_data
+    context['proposal'] = MembersPage.objects.get().proposal
+NameError: name 'MembersPage' is not defined
+ERROR - django.request |                        2019-11-15 18:09:05,337  
+Internal Server Error: /sss/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "faq_faqentry" does not exist
+LINE 1: ...aqentry"."question", "faq_faqentry"."answer" FROM "faq_faqen...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/defaulttags.py", line 168, in render
+    len_values = len(values)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 192, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 126, in _record
+    return method(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "faq_faqentry" does not exist
+LINE 1: ...aqentry"."question", "faq_faqentry"."answer" FROM "faq_faqen...
+                                                             ^
+
+ERROR - django.request |                        2019-11-15 18:13:00,515  
+Internal Server Error: /manage/faq/faqentry/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "faq_faqentry" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "faq_faqentry"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/adminsortable2/admin.py", line 375, in changelist_view
+    return super(SortableAdminMixin, self).changelist_view(request, extra_context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 690, in get_changelist_instance
+    if self.get_actions(request):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/adminsortable2/admin.py", line 142, in get_actions
+    if len(paginator.page_range) > 1 and 'all' not in request.GET and self.enable_sorting:
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 106, in page_range
+    return range(1, self.num_pages + 1)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 192, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 126, in _record
+    return method(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "faq_faqentry" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "faq_faqentry"
+                                          ^
+
+ERROR - django.request |                        2019-11-15 18:18:52,228  
+Internal Server Error: /manage/faq/faqentry/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "faq_faqentry" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "faq_faqentry"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/adminsortable2/admin.py", line 375, in changelist_view
+    return super(SortableAdminMixin, self).changelist_view(request, extra_context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 690, in get_changelist_instance
+    if self.get_actions(request):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/adminsortable2/admin.py", line 142, in get_actions
+    if len(paginator.page_range) > 1 and 'all' not in request.GET and self.enable_sorting:
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 106, in page_range
+    return range(1, self.num_pages + 1)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 192, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 126, in _record
+    return method(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "faq_faqentry" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "faq_faqentry"
+                                          ^
+
+WARNING - django.request |                        2019-11-15 18:46:01,357  
+Not Found: /sponsorlar/
+---
+ERROR - django.request |                        2019-11-18 17:04:55,661  
+Internal Server Error: /
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/test/utils.py", line 98, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/loader_tags.py", line 182, in render
+    template = context.template.engine.get_template(template_name)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/template/base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'static'. Did you forget to register or load this tag?
+ERROR - django.request |                        2019-11-18 18:21:29,019  
+Internal Server Error: /manage/main/mainrovers/
+---
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.ProgrammingError: relation "main_mainrovers" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "main_mainrovers"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/adminsortable2/admin.py", line 375, in changelist_view
+    return super(SortableAdminMixin, self).changelist_view(request, extra_context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 1570, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/contrib/admin/options.py", line 690, in get_changelist_instance
+    if self.get_actions(request):
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/adminsortable2/admin.py", line 142, in get_actions
+    if len(paginator.page_range) > 1 and 'all' not in request.GET and self.enable_sorting:
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 106, in page_range
+    return range(1, self.num_pages + 1)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/query.py", line 387, in count
+    return self.query.get_count(using=self.db)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/query.py", line 491, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/query.py", line 476, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1064, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 192, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/debug_toolbar/panels/sql/tracking.py", line 126, in _record
+    return method(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ataparlarr/.virtualenvs/webrover/lib/python3.5/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "main_mainrovers" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "main_mainrovers"
+                                          ^
+
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:24:36,610  
+STREAM b'IHDR' 16 13
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:24:36,610  
+STREAM b'pHYs' 41 9
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:24:36,610  
+STREAM b'iCCP' 62 2639
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:24:36,610  
+iCCP profile name b'Photoshop ICC profile'
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:24:36,611  
+Compression method 0
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:24:36,611  
+STREAM b'cHRM' 2713 32
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:24:36,611  
+STREAM b'IDAT' 2757 443189
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:59:49,178  
+STREAM b'IHDR' 16 13
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:59:49,178  
+STREAM b'pHYs' 41 9
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:59:49,178  
+STREAM b'iCCP' 62 2639
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:59:49,178  
+iCCP profile name b'Photoshop ICC profile'
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:59:49,179  
+Compression method 0
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:59:49,179  
+STREAM b'cHRM' 2713 32
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 18:59:49,179  
+STREAM b'IDAT' 2757 443189
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:33,648  
+STREAM b'IHDR' 16 13
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:33,648  
+STREAM b'pHYs' 41 9
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:33,648  
+STREAM b'iCCP' 62 2639
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:33,648  
+iCCP profile name b'Photoshop ICC profile'
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:33,648  
+Compression method 0
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:33,649  
+STREAM b'cHRM' 2713 32
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:33,649  
+STREAM b'IDAT' 2757 443189
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:39,739  
+STREAM b'IHDR' 16 13
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:39,739  
+STREAM b'pHYs' 41 9
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:39,739  
+STREAM b'iCCP' 62 2639
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:39,740  
+iCCP profile name b'Photoshop ICC profile'
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:39,740  
+Compression method 0
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:39,740  
+STREAM b'cHRM' 2713 32
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:39,740  
+STREAM b'IDAT' 2757 443189
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:46,279  
+STREAM b'IHDR' 16 13
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:46,280  
+STREAM b'pHYs' 41 9
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:46,280  
+STREAM b'iCCP' 62 2639
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:46,280  
+iCCP profile name b'Photoshop ICC profile'
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:46,280  
+Compression method 0
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:46,280  
+STREAM b'cHRM' 2713 32
+---
+DEBUG - PIL.PngImagePlugin |                        2019-11-18 19:01:46,280  
+STREAM b'IDAT' 2757 443189
+---
+WARNING - django.request |                        2019-11-18 19:01:46,870  
+Not Found: /favicon.ico
+---
+WARNING - django.request |                        2019-11-22 19:23:10,843  
+Not Found: /eng/faq
+---
+WARNING - django.request |                        2019-11-22 19:36:52,950  
+Not Found: /sss/
+---
+WARNING - django.request |                        2019-11-22 19:36:53,849  
+Not Found: /sss/
+---
+WARNING - django.request |                        2019-11-22 19:36:56,045  
+Not Found: /sss/
+---
+WARNING - django.request |                        2019-11-22 19:36:56,199  
+Not Found: /favicon.ico
+---
+WARNING - django.request |                        2019-11-22 19:37:08,975  
+Not Found: /
+---
+WARNING - django.request |                        2019-11-22 19:39:49,803  
+Not Found: /
+---
+WARNING - django.request |                        2019-11-22 19:39:50,699  
+Not Found: /
+---
+WARNING - django.request |                        2019-11-22 19:39:51,040  
+Not Found: /
+---
