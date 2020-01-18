@@ -1,0 +1,99 @@
+{% load static %}
+
+{% block css %}
+      <link rel="stylesheet" href="{% static 'css/new/second.css' %}">
+ <!-- <style>
+    @media screen and (max-width: 968px) {
+        {% for sponsor_type in sponsor_types %}
+
+            .sponsorship-container{
+	            width: calc(({{ sponsor_type.id }} * 100%));
+            }
+        {% endfor %}
+    }
+    </style>  -->
+{% endblock %}
+
+
+<img src="{% static 'img/3.jpg' %}" id="bg2">
+
+        <div class="sponsorship-container">
+        <div class="id-container" id="container">
+        {% for sponsor_type in sponsor_types %}
+            <div class="types-container">
+                <h1 class="ship-name">{{ sponsor_type.name }} Sponsorlar</h1>
+                <div class="sponsors-container">
+                    {% for sponsor in sponsors %}
+                        <div class="sponsor">
+                            <img src="{{ sponsor.image.url }}" width="{{ sponsor.display_width }}px" alt="">
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% empty %}
+            <p>Sponsorluk türü yok.</p>
+        {% endfor %}
+        </div>
+        </div>
+<!--
+<div class="btn-container2">
+    {% for sponsor_type in sponsor_types %}
+		<button id="btn-{{ sponsor_type.id }}" onclick="move{{ sponsor_type.id }}()" class="btn">
+            <h3>{{ sponsor_type.name }} Sponsorlar</h3>
+        </button>
+    {% endfor %}
+</div>
+-->
+{% block body %}
+{% block javascript %}
+    <script src="{% static "js/new/second.js" %}"></script>
+    <script>
+/*
+    var btns = [];
+    var moves = [];
+
+    {% for sponsor_type in sponsor_types %}
+        var b = document.getElementById("btn-"+"{{ sponsor_type.id }}");
+        a = b.id;
+        btns.push(a);
+        var c = "move"+"{{ sponsor_type.id }}"+"()";
+        moves.push(c);
+    {% endfor %}
+
+    console.log(btns);
+    console.log(moves);
+
+
+
+    var k = 0;
+
+    for (;k<moves.length; k++){
+        console.log(moves[k]);
+    }
+
+
+        var el = 1;
+        container.style.top = "-" + ((el - 1) * 100) + "%";
+        console.log(el - 1);
+    */
+    /*
+    var el = 1;
+    for (; el<(btns.length+1); el++){
+        var id_btn = document.getElementById("btn-"+ el );
+        id_btn.addEventListener('click', function () {
+            container.style.top = "-" + ((el - 2) * 100) + "%";
+            console.log(el - 2);
+        });
+    }
+    */
+
+        /*$("#{{ sponsor_type.id }}").click(function(){
+            $(".types-container").animate({
+            top: "100%",
+            });
+        });*/
+
+    </script>
+{% endblock %}
+
+{% endblock %}

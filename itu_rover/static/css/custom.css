@@ -51,6 +51,50 @@ body {
     margin-top: 0px;
 }
 
+/*  middle.html  */
+.middle{
+    background-image: url('/static/img/bg.png')
+}
+.middle-container{
+    width:80%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.exp-container{
+    color: white;
+    height: 60%;
+    width: 25%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+}
+.exp-container ul{
+    border: 1px solid black;
+    padding: 0px;
+}
+.exp-container ul li{
+    margin: 0px;
+    margin-top: 10px;
+    height: 45px;
+    width: 100%;
+    list-style: none;
+    border: 2px solid red;
+    text-align: center;
+    background-color: rgba(160,44,44);
+    color: white;
+}
+
+.corousel-container{
+    width: 30%;
+    float: right;
+    border: 1px solid white;
+}
+.carousel-slide{
+    display: flex;
+}
+
+
 @media (max-width: 995px) {
     .navbar-header {
         float: none;

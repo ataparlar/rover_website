@@ -1,0 +1,17 @@
+#bg3{
+	width: 100%;
+	z-index:-1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.members-container{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: +451;
+    border: 7px solid blue;
+    width: 85%;
+}

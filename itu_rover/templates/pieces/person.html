@@ -1,10 +1,12 @@
 {% load itu_rover %}
 
+
+
 <div class="row">
   <div class="col-12">
     <div class="row justify-content-center {% if person.is_retired %}deactive{% endif %}">
       <div class="col-8 col-md-10 col-lg-7">
-        <img class="img-circle img-responsive" style="min-height: 100px;" src="{{ person.get_photo_url }}"></img>
+        <img class="img-circle img-responsive" style="min-height: 100px;" src="{{ person.get_photo_url }}">
       </div>
     </div>
     <div class="row">
@@ -20,7 +22,7 @@
             data-content="
             {% if person.email %}<i class='fa fa-fw fa-envelope' aria-hidden='true'></i> {{ person.email }}<br>{% endif %}
             {% if person.phone %}<i class='fa fa-fw fa-phone' aria-hidden='true'></i> {{ person.phone }}{% endif %}">{% endif %}
-            <p>{{ person.get_full_name | uppercase }}</p>
+            <p>{{ person.get_full_name }}</p>
           </a>
         </h5>
         <h6 class="font-thick role-in-team">{{ person.role }}</h6>

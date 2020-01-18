@@ -30,31 +30,65 @@ from oldyears.views import OldYearPage
 urlpatterns = [
     path('manage/', admin.site.urls),
     path('', MainPage.as_view(), name='main'),
+    path('', SponsorsPage)
+]
+
+"""
+urlpatterns = [
+    path('manage/', admin.site.urls),
+    path('', MainPage.as_view(), name='main'),
     path('hakkında/', AboutPage.as_view(), name='about'),
     path('sss/', FaqPage.as_view(), name='sss'),
     path('takım-üyeleri/', MembersPage.as_view(), name='members'),
     path('takım-üyeleri/<int:year>/', MembersPage.as_view(),
          name='members-with-year'),
-    path('sponsorlar/', SponsorsPage.as_view(), name='sponsors'),
-    path('sponsorlar/<int:year>/', SponsorsPage.as_view(),
+    path('sponsorlar/', SponsorsPage.as_view, name='sponsors'),
+    path('sponsorlar/<int:year>/', SponsorsPage.as_view,
          name='sponsors-with-year'),
     path('rover/', RoverPage.as_view(), name='rover'),
     path('geçmiş/<int:year>/', OldYearPage.as_view(), name='oldyear'),
+
+    # ---------English links----------------
+    path('eng/', MainPage.as_view(), name='eng_main'),
+    path('eng/about/', AboutPage.as_view(), name='eng_about'),
+    path('eng/faq/', FaqPage.as_view(), name='eng_faq'),
+    path('eng/team-members/', MembersPage.as_view(), name='eng_members'),
+    path('eng/team members/<int:year>/', MembersPage.as_view(),
+         name='eng_members-with-year'),
+    path('eng/sponsors/', SponsorsPage.as_view, name='eng_sponsors'),
+    path('eng/sponsors/<int:year>/', SponsorsPage.as_view,
+         name='eng_sponsors-with-year'),
+    path('eng/rover/', RoverPage.as_view(), name='eng_rover'),
+    path('eng/past/<int:year>/', OldYearPage.as_view(), name='eng_oldyear'),
 ]
+"""
+
+
 """
 if FaqPage.eng_request:
     urlpatterns =[
         path('eng/faq/', FaqPage.as_view(), name='eng/faq/')
     ]"""
 
-# ----------TO DO ---------------------
-# buraya bir if sorgusu yaz
-# urlpattern /eng/ içeriyorsa yeni urlpatterns'ler şunlar olsun:
 
-# views'ta bir şey düzenlemene gerek kalmayabilir.
-# html'de navbara url'e /eng/ ekleyecek bir form ekle
-# ardından url'i if ile sorgula /eng/ varsa farklı şeyler çıksın
-# eng_ modelleri hazır
+
+# ----------NOT WORKING--------------
+"""if 'eng/' in request.path:
+    urlpatterns = [
+        path('eng/', MainPage.as_view(), name='main'),
+        path('eng/about/', AboutPage.as_view(), name='about'),
+        path('eng/faq/', FaqPage.as_view(), name='faq'),
+        path('eng/team-members/', MembersPage.as_view(), name='members'),
+        path('eng/team members/<int:year>/', MembersPage.as_view(),
+             name='members-with-year'),
+        path('eng/sponsors/', SponsorsPage.as_view(), name='sponsors'),
+        path('eng/sponsors/<int:year>/', SponsorsPage.as_view(),
+             name='sponsors-with-year'),
+        path('eng/rover/', RoverPage.as_view(), name='rover'),
+        path('eng/past/<int:year>/', OldYearPage.as_view(), name='oldyear'),
+    ]"""
+
+
 
 
 if settings.DEBUG:

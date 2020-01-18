@@ -9,7 +9,7 @@ from .models import SubTeam, TeamAdvisor, Member, TeamLeader, MembersPage as MP
 
 
 class MembersPage(TemplateView):
-    template_name = 'members.html'
+    template_name = 'third.html'
     not_found_message = 'Year not found for members page.'
 
     def get_member_context(self, year):
@@ -22,11 +22,12 @@ class MembersPage(TemplateView):
         except ObjectDoesNotExist:
             members_page = None
         years_members = Member.objects.filter(year=year)
-        subteams = (SubTeam.objects
+        subteams = SubTeam.objects.all()
+        """subteams = (SubTeam.objects
                     .filter(members__year=year)
                     .prefetch_related(
                         Prefetch('members', queryset=years_members)
-                    )).distinct()
+                    )).distinct()"""
         if not subteams:
             raise Http404(self.not_found_message)
         return {

@@ -68,7 +68,7 @@ INSTALLED_APPS = [
     'main',
     'rover',
     'oldyears',
-    'faq'
+    'faq',
 ]
 
 MIDDLEWARE = [
