@@ -23,7 +23,7 @@
             <div class="types-container">
                 <h1 class="ship-name">{{ sponsor_type.name }} Sponsorlar</h1>
                 <div class="sponsors-container">
-                    {% for sponsor in sponsors %}
+                    {% for sponsor in sponsor_type.sponsors.all %}
                         <div class="sponsor">
                             <img src="{{ sponsor.image.url }}" width="{{ sponsor.display_width }}px" alt="">
                         </div>

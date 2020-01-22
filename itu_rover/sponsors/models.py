@@ -37,9 +37,11 @@ class sponsor_new(TimeStampedModel, models.Model):
         verbose_name='eng name',
     )
     website = models.URLField(verbose_name='website', default='www.servisbiziz.com')
+
     sponsorship_year = models.PositiveSmallIntegerField(default=current_year())
+
     sponsorship_type = models.ForeignKey(
-        "sponsor_type",
+        sponsor_type,
         on_delete=models.SET_NULL,
         null=True,
         related_name='sponsors',

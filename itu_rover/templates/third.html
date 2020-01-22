@@ -5,9 +5,9 @@
 {% endblock %}
 
 <img src="{% static 'img/3.jpg' %}" id="bg3">
-
+<!--
     {% for faq in faq %}
-      <!----------------- the right one is the name of the application. Left one is used for associating the questions and answers-->
+      --------------- the right one is the name of the application. Left one is used for associating the questions and answers
       <div class="row justify-content-start">
         <div class="col-md-4">
           <h4 class="font-thick text-right">{{ faq.question}}</h4>
@@ -22,6 +22,17 @@
       {% empty %}
       <div class="row"><div class="col-12"><p class="text-big text-center">Buraya İTÜ Rover Takımı hakkında henüz bir şey yazılmadı.</p></div></div>
       {% endfor %}
+-->
+<div class="members-container">
+    {% for subteam in subteams %}
+        <h1>{{ subteam.name }}</h1>
+        {% for member in subteam.members.all %}
+            <img style="width: 200px" src="{{ member.get_photo_url }}" alt="">
+            <h2>{{ member.get_full_name }}</h2>
+            <h1>{{ member.description }}</h1>
+        {% endfor %}
+    {% endfor %}
+</div>
 
 {% block body %}
 

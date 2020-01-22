@@ -22,12 +22,12 @@ class MembersPage(TemplateView):
         except ObjectDoesNotExist:
             members_page = None
         years_members = Member.objects.filter(year=year)
-        subteams = SubTeam.objects.all()
-        """subteams = (SubTeam.objects
+        #subteams = SubTeam.objects.all()
+        subteams = (SubTeam.objects
                     .filter(members__year=year)
                     .prefetch_related(
                         Prefetch('members', queryset=years_members)
-                    )).distinct()"""
+                    )).distinct()
         if not subteams:
             raise Http404(self.not_found_message)
         return {
