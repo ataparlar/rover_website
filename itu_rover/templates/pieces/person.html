@@ -1,7 +1,13 @@
 {% load itu_rover %}
 
 
+<div class="group">
+                    <img style="width: 200px; height: 250px" src="{{ person.get_photo_url }}" alt="">
+                    <p><b>{{ person.get_full_name }}</b></p>
+                    <p>{{ person.description }}</p>
+                </div>
 
+<!--
 <div class="row">
   <div class="col-12">
     <div class="row justify-content-center {% if person.is_retired %}deactive{% endif %}">
@@ -32,3 +38,4 @@
   </div>
 </div>
 <br>
+-->

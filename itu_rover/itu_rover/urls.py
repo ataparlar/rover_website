@@ -30,7 +30,8 @@ from oldyears.views import OldYearPage
 urlpatterns = [
     path('manage/', admin.site.urls),
     path('', MainPage.as_view(), name='main'),
-    path('', SponsorsPage)
+    path('gecmis/<int:year>/', OldYearPage.as_view(), name='oldyear'),
+    path('sss/', FaqPage.as_view(), name='faq'),
 ]
 
 """

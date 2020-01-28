@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 
 from .models import SliderImage, MainPageEntry, MainRovers
+from faq.models import FaqEntry
 from sponsors.models import sponsor_new, sponsor_type
 from members.models import SubTeam, TeamAdvisor, Member, TeamLeader, MembersPage as MP
 from core.defaults import current_year
@@ -11,7 +12,7 @@ from django.http import Http404
 
 
 class MainPage(TemplateView):
-    template_name = 'main.html'
+    template_name = 'base.html'
     not_found_message = 'Year not found for sponsors page.'
 
 
@@ -31,15 +32,16 @@ class MainPage(TemplateView):
 
     def get_member_context(self, year):
         r_year = str(OldYear.objects.all().order_by('-year')[0].year)
-        """try:
+        try:
             leader = TeamLeader.objects.filter(member__year=r_year).get().member
         except ObjectDoesNotExist:
             leader = None
-        try:
+        print(leader)
+        """try:
             members_page = MP.objects.filter(year=r_year).get()
         except ObjectDoesNotExist:
             members_page = None"""
-        years_members = Member.objects.filter(year=year)
+        years_members = Member.objects.filter(year=r_year)
         subteams = (SubTeam.objects.all().prefetch_related(     # filter(members__year=year)
             Prefetch('members', queryset=years_members)
         )).distinct()
@@ -47,8 +49,8 @@ class MainPage(TemplateView):
             raise Http404(self.not_found_message)
         return {
             'subteams': subteams,
-            'advisors': TeamAdvisor.objects.filter(year=year),
-            #'leader': leader,
+            'advisors': TeamAdvisor.objects.filter(year=r_year),
+            'leader': leader,
             'subteamless': Member.objects.filter(subteam=None, year=year),
             #'page': members_page,
         }
@@ -60,15 +62,17 @@ class MainPage(TemplateView):
 
         sponsor_context = self.get_sponsor_context()
         context.update(sponsor_context)
-
+        print(len(FaqEntry.objects.all()))
         extra_context = {
             'slide_images': SliderImage.objects.all(),
             'entries': MainPageEntry.objects.filter(is_old=False),
             'rovers': MainRovers.objects.all(),
+            'faqs': FaqEntry.objects.all()
         }
         context.update(extra_context)
 
         member_context = self.get_member_context(r_year)
         context.update(member_context)
+        print(r_year)
 
         return context

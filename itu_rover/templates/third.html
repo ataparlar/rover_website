@@ -1,43 +1,49 @@
 {% load static %}
 
 {% block css %}
-      <link rel="stylesheet" href="{% static 'css/new/third.css' %}">
 {% endblock %}
+<!--  -->
+<link rel="stylesheet" href="{% static 'css/new/third.css' %}">
 
+<div style="position: absolute; top: 100%; left:0; width: 100%; height: 100%;">
 <img src="{% static 'img/3.jpg' %}" id="bg3">
-<!--
-    {% for faq in faq %}
-      --------------- the right one is the name of the application. Left one is used for associating the questions and answers
-      <div class="row justify-content-start">
-        <div class="col-md-4">
-          <h4 class="font-thick text-right">{{ faq.question}}</h4>
-        </div>
-        <div class="col-md-8 text-big">
-          <blockquote>
-            {{ faq.answer }}
-          </blockquote>
-        </div>
-        <hr>
-      </div>
-      {% empty %}
-      <div class="row"><div class="col-12"><p class="text-big text-center">Buraya İTÜ Rover Takımı hakkında henüz bir şey yazılmadı.</p></div></div>
-      {% endfor %}
--->
+
 <div class="members-container">
-    {% for subteam in subteams %}
-        <h1>{{ subteam.name }}</h1>
-        {% for member in subteam.members.all %}
-            <img style="width: 200px" src="{{ member.get_photo_url }}" alt="">
-            <h2>{{ member.get_full_name }}</h2>
-            <h1>{{ member.description }}</h1>
+<div class="adv-lead-container">
+    <div class="adv-container">
+        <h1>Takım Danışmanı</h1>
+        <hr style="border: 1px solid white; margin-bottom: 10px;">
+        {% for advisor in advisors %}
+            {% include 'pieces/person.html' with person=advisor %}
         {% endfor %}
+    </div>
+
+    <div class="leader-container">
+        <h1>Takım Lideri</h1>
+        <hr style="border: 1px solid white; margin-bottom: 10px;">
+        {% if leader %}
+            {% include 'pieces/person.html' with person=leader %}
+        {% endif %}
+    </div>
+</div>
+
+    {% for subteam in subteams %}
+        <div class="members-inner {% if 'Lider' in member.role %}order-0{% else %}order-1{% endif %}">
+            <h1>{{ subteam.name }}</h1>
+            <hr style="border: 1px solid white; margin-bottom: 10px;">
+            {% for member in subteam.members.all %}
+                {% include 'pieces/person.html' with person=member %}
+            {% endfor %}
+
+        </div>
     {% endfor %}
+</div>
 </div>
 
 {% block body %}
 
 {% block javascript %}
-    <script src="{% static "js/new/third.js" %}"></script>
+    <script src="{% static "js/new/oldyears.js" %}"></script>
 {% endblock %}
 
 

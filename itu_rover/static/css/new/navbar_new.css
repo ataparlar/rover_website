@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html, body{
@@ -15,7 +15,7 @@ nav {
     z-index: +90;
     /*background-color: rgba(255,255,255,0.7);*/
     /*background-image: linear-gradient(rgba(255,255,255,1), rgba(255,0,0,0));*/
-    padding: 4px 0px;
+    padding: 4px 0;
 }
 .inner-nav{
     display: flex;
@@ -25,15 +25,16 @@ nav {
 .inner-nav div{
     margin-left: 15px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
 }
 
 .inner-nav ul{
     color: white;
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
     list-style: none;
+}
+.inner-nav ul li{
+    display: inline-block;
 }
 .inner-nav div a{
     color: white;
@@ -51,9 +52,23 @@ nav {
     /*background-color: white;#A02C2C;*/
     color: lightgray;
 }
+.dd-container{
+    position: relative;
+}
+.dd_years {
+    display: none;
+    position: absolute;
+    left: 29%;
+    top: 90%;
+    width: 100px;
+}
+.dd_years li{
+    display: block;
+}
 
 .ul-right{
-    width: 40%;
+    width: 45%;
+    float: right;
 }
 .ul-right li {
     padding: 15px;
@@ -62,9 +77,17 @@ nav {
     padding: 7px 10px;
     border-left: 1px solid white;
 }
+
+.inner-nav div li:hover{
+    background-color: rgba(0,0,0,0.1)
+}
+
 .ul-right a:hover, .ul-right li:hover{
     /*background-color: white;#A02C2C;*/
     color: lightgray;
+}
+.dd-container:hover .dd_years{
+    display: block;
 }
 
 #mobile{

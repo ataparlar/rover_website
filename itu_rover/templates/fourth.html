@@ -1,0 +1,33 @@
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/new/fourth.css' %}">
+{% endblock %}
+
+<img src="{% static 'img/arkaplan.png' %}" id="bg">
+<div class="faq-container">
+    {% for faq in faqs %}
+        <div class="question">
+            <br>
+            <h2>{{ faq.question }}</h2>
+            <br>
+        </div>
+        <div class="answer">
+            <br>
+            <h3>{{ faq.answer }}</h3>
+            <br>
+        </div>
+        <br><br>
+    {% empty %}
+    Buraya İTÜ Rover Takımı hakkında henüz bir şey yazılmadı.
+    {% endfor %}
+</div>
+
+{% block body %}
+
+{% block javascript %}
+    <script src="{% static "js/new/oldyears.js" %}"></script>
+{% endblock %}
+
+
+{% endblock %}

@@ -11,7 +11,7 @@ from .models import FaqEntry
 
 class FaqPage(ListView):
     model = FaqEntry
-    template_name = 'third.html'
+    template_name = 'fourth.html'
     context_object_name = 'faq'
 
 
