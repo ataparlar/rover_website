@@ -1,0 +1,52 @@
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+<img src="{% static 'img/bg2.png' %}" id="bg">
+
+{% if "/eng/" in request.path %}
+    <div class="about-container">
+        <div class="entry-territory">
+            <br>
+            <h1>ABOUT US</h1>
+            {% for entry in about_entries %}
+                <div class="entries">
+                    <br>
+                    <hr style="border: 1px solid white">
+                    <br>
+                    <h1><b>{{ entry.eng_title }}</b></h1>
+                    <br>
+                    <p><b>{{ entry.eng_detail }}</b></p>
+                    <br>
+                    {% if entry.image %}<img src="{{ entry.image.url }}" alt="">{% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% else %}
+    <div class="about-container">
+        <div class="entry-territory">
+            <br>
+            <h1>HAKKIMIZDA</h1>
+            {% for entry in about_entries %}
+                <div class="entries">
+                    <br>
+                    <hr style="border: 1px solid white">
+                    <br>
+                    <h1><b>{{ entry.title }}</b></h1>
+                    <br>
+                    <p><b>{{ entry.detail }}</b></p>
+                    <br>
+                    {% if entry.image %}<img src="{{ entry.image.url }}" alt="">{% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endif %}
+
+{% block body %}
+
+{% endblock %}

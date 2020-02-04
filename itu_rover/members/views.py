@@ -9,7 +9,7 @@ from .models import SubTeam, TeamAdvisor, Member, TeamLeader, MembersPage as MP
 
 
 class MembersPage(TemplateView):
-    template_name = 'third.html'
+    template_name = 'members.html'
     not_found_message = 'Year not found for members page.'
 
     def get_member_context(self, year):

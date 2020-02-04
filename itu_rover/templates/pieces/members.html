@@ -28,7 +28,7 @@
           <div class="row justify-content-center">
             {% for advisor in advisors %}
             <div class="col-md-5">
-              {% include 'pieces/person.html' with person=advisor %}
+              {% include 'pieces/../person.html' with person=advisor %}
             </div>
             {% empty %}
             Burası boş! Ah, artık değil.
@@ -42,7 +42,7 @@
           <div class="row justify-content-center">
             <div class="col-12">
               {% if leader %}
-              {% include 'pieces/person.html' with person=leader %}
+              {% include 'pieces/../person.html' with person=leader %}
               {% else %}
               <p>Takımın lideri henüz belli değil!</p>
               {% endif %}
@@ -60,7 +60,7 @@
           <div class="row justify-content-center">
             {% for member in subteam.members.all %}
             <div class="col-md-3 {% if 'Lider' in member.role %}order-0{% else %}order-1{% endif %}">
-              {% include 'pieces/person.html' with person=member %}
+              {% include 'pieces/../person.html' with person=member %}
             </div>
             {% empty %}
             Burası boş! Ah, artık değil.

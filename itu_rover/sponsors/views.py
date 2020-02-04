@@ -8,7 +8,7 @@ from .models import sponsor_new, sponsor_type
 
 
 class SponsorsPage(TemplateView):
-    template_name = 'second.html'
+    template_name = 'sponsors.html'
     not_found_message = 'Year not found for sponsors page.'
 
     def get_sponsor_context(self, year):

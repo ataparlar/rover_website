@@ -22,7 +22,7 @@ from django.conf import settings
 from about.views import AboutPage
 from members.views import MembersPage
 from faq.views import FaqPage
-from main.views import MainPage
+from main.views import MainPage, GraduatedPage
 from rover.views import RoverPage
 from sponsors.views import SponsorsPage
 from oldyears.views import OldYearPage
@@ -30,67 +30,12 @@ from oldyears.views import OldYearPage
 urlpatterns = [
     path('manage/', admin.site.urls),
     path('', MainPage.as_view(), name='main'),
-    path('gecmis/<int:year>/', OldYearPage.as_view(), name='oldyear'),
-    path('sss/', FaqPage.as_view(), name='faq'),
+    path('eng/', MainPage.as_view(), name='main'),
+    path('gecmis/<int:year>/', OldYearPage.as_view(), name='gecmis'),
+    path('eng/past/<int:year>/', OldYearPage.as_view(), name='oldyear'),
+    path('mezunlar/', GraduatedPage.as_view(), name='mezunlar'),
+    path('eng/graduated/', GraduatedPage.as_view(), name='graduated'),
 ]
-
-"""
-urlpatterns = [
-    path('manage/', admin.site.urls),
-    path('', MainPage.as_view(), name='main'),
-    path('hakkında/', AboutPage.as_view(), name='about'),
-    path('sss/', FaqPage.as_view(), name='sss'),
-    path('takım-üyeleri/', MembersPage.as_view(), name='members'),
-    path('takım-üyeleri/<int:year>/', MembersPage.as_view(),
-         name='members-with-year'),
-    path('sponsorlar/', SponsorsPage.as_view, name='sponsors'),
-    path('sponsorlar/<int:year>/', SponsorsPage.as_view,
-         name='sponsors-with-year'),
-    path('rover/', RoverPage.as_view(), name='rover'),
-    path('geçmiş/<int:year>/', OldYearPage.as_view(), name='oldyear'),
-
-    # ---------English links----------------
-    path('eng/', MainPage.as_view(), name='eng_main'),
-    path('eng/about/', AboutPage.as_view(), name='eng_about'),
-    path('eng/faq/', FaqPage.as_view(), name='eng_faq'),
-    path('eng/team-members/', MembersPage.as_view(), name='eng_members'),
-    path('eng/team members/<int:year>/', MembersPage.as_view(),
-         name='eng_members-with-year'),
-    path('eng/sponsors/', SponsorsPage.as_view, name='eng_sponsors'),
-    path('eng/sponsors/<int:year>/', SponsorsPage.as_view,
-         name='eng_sponsors-with-year'),
-    path('eng/rover/', RoverPage.as_view(), name='eng_rover'),
-    path('eng/past/<int:year>/', OldYearPage.as_view(), name='eng_oldyear'),
-]
-"""
-
-
-"""
-if FaqPage.eng_request:
-    urlpatterns =[
-        path('eng/faq/', FaqPage.as_view(), name='eng/faq/')
-    ]"""
-
-
-
-# ----------NOT WORKING--------------
-"""if 'eng/' in request.path:
-    urlpatterns = [
-        path('eng/', MainPage.as_view(), name='main'),
-        path('eng/about/', AboutPage.as_view(), name='about'),
-        path('eng/faq/', FaqPage.as_view(), name='faq'),
-        path('eng/team-members/', MembersPage.as_view(), name='members'),
-        path('eng/team members/<int:year>/', MembersPage.as_view(),
-             name='members-with-year'),
-        path('eng/sponsors/', SponsorsPage.as_view(), name='sponsors'),
-        path('eng/sponsors/<int:year>/', SponsorsPage.as_view(),
-             name='sponsors-with-year'),
-        path('eng/rover/', RoverPage.as_view(), name='rover'),
-        path('eng/past/<int:year>/', OldYearPage.as_view(), name='oldyear'),
-    ]"""
-
-
-
 
 if settings.DEBUG:
     import debug_toolbar
