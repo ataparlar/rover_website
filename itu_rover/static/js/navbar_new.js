@@ -1,28 +1,7 @@
 $(document).ready(function(){
 //$("#bg").css({left: "-30%"});
 
-// MENU icon for mobile
 
-$("#menu").click(function () {
-    $("nav ul li").fadeToggle();
-    $("nav ul").fadeToggle();
-});
-
-/*
-    // ---------------------------------UP - DOWN--------------------------------
-    $("#first-btn").click(function(){
-        $(".content").animate({top: "0"});
-    });
-    $("#second-btn").click(function(){
-        $(".content").animate({top: "-100%"});
-    });
-    $("#third-btn").click(function(){
-        $(".content").animate({top: "-200%"});
-    });
-    $("#fourth-btn").click(function(){
-        $(".content").animate({top: "-300%"});
-    });
-*/
 if (window.location.href.indexOf("/eng/") > -1) {
     if(window.location.href.indexOf("/eng/past/20") > -1) {
     $("#first-btn").click(function () {

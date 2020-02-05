@@ -5,48 +5,8 @@
 {% endblock %}
 
 <img src="{% static 'img/arkaplan.png' %}" id="bg">
+
     <!---------CONTENT----------->
-{% if "/eng/" in request.path %}
-    <div class="rover-prop">
-		<div id="rover17-prop">
-			<h1>'17</h1>
-            <br>
-            <h3><p></p></h3>
-        </div>
-		<div id="rover18-prop">
-			<h1>'18</h1>
-            <br>
-			<h3><p></p></h3>
-		</div>
-		<div id="rover19-prop">
-			<h1>'19</h1>
-            <br>
-			<h3><p></p></h3>
-		</div>
-	</div>
-
-    <div class="images">
-        <img src="{% static 'img/18_2.png' %}" class="rover" id="rover17">
-        <img src="{% static 'img/18_2.png' %}" class="rover" id="rover18">
-        <img src="{% static 'img/18_2.png' %}" class="rover" id="rover19">
-    </div>
-
-	<!----------LEFT-RIGHT ANIMATE BUTTONS---------->
-	<div class="btn-container">
-		<div id="left-btn" class="btn-lr">
-            <img src="{% static "img/18_2.png" %}" alt="">
-            <div><b>'17</b></div>
-        </div>
-		<div id="middle-btn" class="btn-lr">
-            <img src="{% static "img/18_2.png" %}" alt="">
-            <div><b>'18</b></div>
-        </div>
-		<div id="right-btn" class="btn-lr">
-            <img src="{% static "img/18_2.png" %}" alt="">
-            <div><b>'19</b></div>
-        </div>
-	</div>
-{% else %}
     <div class="rover-prop-container">
         <div class="rover-prop">
             <div id="rover17-prop">
@@ -64,15 +24,15 @@
         </div>
     </div>
     <div class="images">
-        <img src="{% static 'img/18_2.png' %}" class="rover" id="rover17">
+        <img src="{% static 'img/17_2.png' %}" class="rover" id="rover17">
         <img src="{% static 'img/18_2.png' %}" class="rover" id="rover18">
-        <img src="{% static 'img/18_2.png' %}" class="rover" id="rover19">
+        <img src="{% static 'img/19_4.png' %}" class="rover" id="rover19">
     </div>
 
 	<!----------LEFT-RIGHT ANIMATE BUTTONS---------->
 	<div class="btn-container">
 		<div id="left-btn" class="btn-lr">
-            <img src="{% static "img/18_2.png" %}" alt="">
+            <img src="{% static "img/17_2.png" %}" alt="">
             <div><b>'17</b></div>
         </div>
 		<div id="middle-btn" class="btn-lr">
@@ -80,16 +40,17 @@
             <div><b>'18</b></div>
         </div>
 		<div id="right-btn" class="btn-lr">
-            <img src="{% static "img/18_2.png" %}" alt="">
+            <img src="{% static "img/19_4.png" %}" alt="">
             <div><b>'19</b></div>
         </div>
 	</div>
-{% endif %}
+
 
 
 
 {% block body %}
 {% block javascript %}
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
     <script src="{% static "js/rover.js" %}"></script>
 {% endblock %}
 

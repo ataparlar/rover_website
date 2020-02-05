@@ -70,6 +70,7 @@ body{
 }
 .btn-container img{
 	width: 120px;
+	height: 100px;
 	margin-bottom: 10px;
 	opacity: 0.5;
 }
